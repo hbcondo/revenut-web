@@ -27,7 +27,7 @@ I looked into using another SaaS analytics service but they all charge a premium
 
 |  Stripe        |  Revenut       |
 |     :---:      |     :---:      |
-| [<img alt="Screenshot Stripe Mobile App" src="assets/Revenut-Screenshot-Stripe-Mobile.png" width="50%" alt="Stripe Mobile App" />](assets/Revenut-Screenshot-Stripe-Mobile.png) | [<img src="assets/Revenut-Screenshot-Dashboard.png" width="50%" alt="Revenut Mobile App" />](assets\Revenut-Screenshot-Dashboard.png)     |
+| [<img alt="Screenshot Stripe Mobile App" src="assets/Revenut-Screenshot-Stripe-Mobile.png" width="50%" alt="Stripe Mobile App" />](assets/Revenut-Screenshot-Stripe-Mobile.png) | [<img src="assets/Revenut-Screenshot-Dashboard.png" width="50%" alt="Revenut Mobile App" />](assets/Revenut-Screenshot-Dashboard.png)     |
 
 
 # Who should use Revenut?
