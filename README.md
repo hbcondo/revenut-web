@@ -1,4 +1,4 @@
-<div align="center" style="background-color: #F8EFED;">
+<div align="center">
   <a href="https://revenut.com/" style="color: black;">
     <img alt="revenut" src="assets/Revenut-logo-128x128.png" width="128" height="128">
     <h1>Revenut</h1>
@@ -71,7 +71,7 @@ The metrics Revenut displays requires retrieving two months of charges (for mont
 
 > ...listing charges (or most resources) can be quite slow as you need to render many objects. The Charge API especially is quite a large object to render and paginate through.
 
-Source: https://github.com/stripe/stripe-dotnet/issues/2284#issuecomment-777192698
+Source: [https://github.com/stripe/stripe-dotnet/issues/2284#issuecomment-777192698](https://github.com/stripe/stripe-dotnet/issues/2284#issuecomment-777192698)
 <p align="center"><img src="assets/Revenut-Screenshot-Loading.png" width="25%" alt="Revenut Loading" /></p>
 
 
@@ -84,7 +84,7 @@ The Revenut source code is made available under the [**Apache 2.0 license**](LIC
 
 
 #  🙌 Acknowledgements
-- https://stripe.com/docs/api
+- [https://stripe.com/docs/api](https://stripe.com/docs/api)
 
 
 [^1]: https://Last10K.com
