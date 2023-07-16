@@ -53,6 +53,19 @@ SaaS owners who offer free trials on their products and have recurring revenue i
 - [`MockuPhone`](https://mockuphone.com/)
 
 
+#  🏃 Workflow
+```mermaid
+sequenceDiagram
+    Revenut App->>Stripe Connect: Login with Stripe
+    Stripe Connect-->>Revenut App: [authorization_code]
+    Revenut App->>Revenut API: [authorization_code]
+    Revenut API->>Stripe API: Turn [authorization_code] into [stripe_user_id]
+    Stripe API-->>Revenut API: [stripe_user_id]
+    Revenut API->>Stripe API: Get Stripe account data
+    Stripe API-->>Revenut API: Return account data
+    Revenut API-->>Revenut App: Display SaaS metrics
+```
+
 #  🚦 Authentication
 Revenut uses Expo's built-in [Authentication package](https://docs.expo.dev/develop/authentication/) that has been configured to use [Stripe's browser-based authentication via OAuth](https://stripe.com/docs/connect/oauth-reference) which allows Stripe users to login with their existing Stripe credentials securely so Revenut can retrieve data required to formulate its metrics on a SaaS.
 <p align="center"><img src="assets/Revenut-Screenshot-Stripe-Login.png" width="25%" alt="Revenut Authentication" /></p>
