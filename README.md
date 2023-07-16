@@ -56,14 +56,22 @@ SaaS owners who offer free trials on their products and have recurring revenue i
 #  🏃 Workflow
 ```mermaid
 sequenceDiagram
+    actor SaaS Owner
+    SaaS Owner->>Revenut App: iOS / Android / Web
+    activate Stripe Connect
     Revenut App->>Stripe Connect: Login with Stripe
     Stripe Connect-->>Revenut App: [authorization_code]
+    deactivate Stripe Connect
     Revenut App->>Revenut API: [authorization_code]
-    Revenut API->>Stripe API: Turn [authorization_code] into [stripe_user_id]
+    activate Stripe API
+    Revenut API->>Stripe API: Request access token
     Stripe API-->>Revenut API: [stripe_user_id]
     Revenut API->>Stripe API: Get Stripe account data
     Stripe API-->>Revenut API: Return account data
-    Revenut API-->>Revenut App: Display SaaS metrics
+    deactivate Stripe API
+    Note over Revenut API: Crunch Numbers 
+    Revenut API-->>Revenut App: Return SaaS metrics
+    Revenut App-->>SaaS Owner: Display SaaS metrics
 ```
 
 #  🚦 Authentication
