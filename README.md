@@ -58,13 +58,6 @@ SaaS owners who offer free trials on their products and have recurring revenue i
 sequenceDiagram
     autonumber
     actor SaaS Owner
-    participant Stripe Connect
-    participant Revenut App
-    participant Stripe API
-    participant Revenut API
-    link Stripe Connect: OAuth Reference @ https://stripe.com/docs/connect/oauth-reference
-    link Revenut App: Source Code @ https://github.com/hbcondo/revenut-app
-    link Stripe API: Documentation @ https://stripe.com/docs/api
     SaaS Owner->>Revenut App: iOS / Android / Web
     critical whitelist
     activate Stripe Connect
